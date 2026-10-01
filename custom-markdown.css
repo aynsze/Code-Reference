@@ -1,0 +1,10 @@
+/* VSCode/custom-markdown.css */
+/* bk1 */
+/* VSCodeのMarkdown Previewのカスタムスタイル */
+
+.markdown-body h2 {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
