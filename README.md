@@ -18,5 +18,6 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 - [Python](./docs/04_Python.md)
 - [正規表現](./docs/05_正規表現.md)
 - [SQL](./docs/06_SQL.md)
+- [Pyside6](./docs/07_Pyside6.md)
 - [Git](./docs/Git.md)
 - [VSCode](./docs/VSCode.md)
