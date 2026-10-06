@@ -4,16 +4,25 @@
   - [範囲選択した文字のデザイン（`::selection`）](#範囲選択した文字のデザイン)
   - [箇条書きの記号部分（`::marker`）](#箇条書きの記号部分)
   - [最初の1行目（`::first-line`）](#最初の1行目)
+  - [最初の1文字目（`::first-letter`）](#最初の1文字目)
 
 - 疑似クラス（`:`）
   - [子要素](#子要素)
+  - [ユーザー操作](#ユーザー操作)
 
 - レイアウト
+  - [余白](#余白)
   - [角丸（`border-radius`）](#角丸)
 
-- 他
-  - [テキストの範囲選択（`user-select）](#テキストの範囲選択)
+- 色
+  - [文字色（`color`）](#文字色)
   - [アクセントカラー（`accent-color`）](#アクセントカラー)
+
+- フォント
+  - [太さ（`font-weight`）](#太さ)
+
+- テキスト
+  - [範囲選択（`user-select）](#範囲選択)
 
 # 基本
 
@@ -51,7 +60,8 @@
 
   ```html
   <ul>
-    <li>項目1</li>
+    <li>項目1タイトル<br>項目1本文</li>
+    <li>項目1タイトル<br>項目1本文</li>
   </ul>
   ```
 
@@ -77,6 +87,28 @@
   ```
 
   -->
+
+- ### 最初の1文字目
+
+  `::first-letter`
+
+  ```css
+  li::first-letter {
+    color: red;
+  }
+  ```
+
+  <!-- demo
+
+  ```html
+  <ul>
+    <li>項目1タイトル<br>項目1本文</li>
+    <li>項目1タイトル<br>項目1本文</li>
+  </ul>
+  ```
+
+  -->
+
 
 ## 疑似クラス
 
@@ -309,10 +341,88 @@
     ```
 
     -->
+    ---
+    
+- ### ユーザー操作
 
-##
+  - マウスを乗せているとき（`:hover`）
+    ```css
+    input:hover {
+      background-color: red;
+    }
+    ```
+
+    <!-- demo
+
+    ```html
+    <input type="text">
+    ```
+
+    ```css
+    input:hover {
+      background-color: red;
+    }
+    ```
+
+    -->
+
+  - フォーカス中（`:focus`）
+    ```css
+    input:focus {
+      background-color: red;
+    }
+    ```
+
+    <!-- demo
+
+    ```html
+    <input type="text">
+    ```
+
+    ```css
+    input:focus {
+      background-color: red;
+    }
+    ```
+
+    -->
+
+  - 押した瞬間（`:active`）
+    ```css
+    input:active {
+      background-color: red;
+    }
+    ```
+
+    <!-- demo
+
+    ```html
+    <input type="text">
+    ```
+
+    ```css
+    input:active {
+      background-color: red;
+    }
+    ```
+
+    -->
+
+
+## レイアウト
+
+- ### 余白
+  上から時計周り
+  | 例                                         | 説明                              |
+  | ------------------------------------------ | --------------------------------- |
+  | `margin: 20px;`<!-- copy -->               | 全方向に 20px                     |
+  | `margin: 20px 32px;`<!-- copy -->          | 上下に 20px、左右に 32px          |
+  | `margin: 20px 32px 10px;`<!-- copy -->     | 上に 20px、左右に 32px、下に 10px |
+  | `margin: 20px 32px 10px 5px;`<!-- copy --> | 上・右・下・左の順                |
+  ---
 
 - ### 角丸
+  `border-radius`
 
   ```css
   border-radius: 15px;
@@ -326,114 +436,114 @@
 
   ```css
   div {
-      width: 80px;
-      height: 50px;
-      background-color: red;
+    width: 80px;
+    height: 50px;
+    background-color: red;
 
-      border-radius: 15px
+    border-radius: 15px
   }
   ```
 
   -->
-  - 左上のみ角丸（`top-left`）
+
+  - 他
+    |　値 | 説明|
+    | --- | --- |
+    | `top-left` | 左上のみ |
+    | `top-right` | 右上のみ |
+    | `bottom-left` | 左下のみ |
+    | `bottom-right` | 右下のみ |
 
     ```css
     border-top-left-radius: 15px;
     ```
 
-      <!-- demo
-    
-      ```html
-      <div></div>
-      ```
-    
-      ```css
-      div {
-          width: 80px;
-          height: 50px;
-          background-color: red;
-    
-          border-top-left-radius: 15px
-      }
-      ```
-    
-      -->
-
-  - 右上のみ角丸（`top-right`）
-
-    ```css
-    border-top-right-radius: 15px;
+    <!-- demo
+  
+    ```html
+    <div></div>
     ```
-
-      <!-- demo
-    
-      ```html
-      <div></div>
-      ```
-    
-      ```css
-      div {
-          width: 80px;
-          height: 50px;
-          background-color: red;
-    
-          border-top-right-radius: 15px
-      }
-      ```
-    
-      -->
-
-  - 左下のみ角丸（`bottom-left`）
-
+  
     ```css
-    border-bottom-left-radius: 15px;
+    div {
+      width: 80px;
+      height: 50px;
+      background-color: red;
+
+      border-top-left-radius: 15px
+    }
     ```
+  
+    -->
 
-      <!-- demo
-    
-      ```html
-      <div></div>
-      ```
-    
-      ```css
-      div {
-          width: 80px;
-          height: 50px;
-          background-color: red;
-    
-          border-bottom-left-radius: 15px
-      }
-      ```
-    
-      -->
+## 色
+- ### 文字色
+  `color`
+  ```css
+  color: red;
+  ```
 
-  - 右下のみ角丸（`bottom-right`）
+  <!-- demo
 
-    ```css
-    border-bottom-right-radius: 15px;
-    ```
+  ```html
+  <div>文字の色</div>
+  ```
 
-      <!-- demo
-    
-      ```html
-      <div></div>
-      ```
-    
-      ```css
-      div {
-          width: 80px;
-          height: 50px;
-          background-color: red;
-    
-          border-bottom-right-radius: 15px
-      }
-      ```
-    
-      -->
+  -->
+  ---
 
-## 他
+- ### アクセントカラー
+  `accent-color`：チェックボックス、ラジオボタン、レンジ、プログレスバーなどの色を指定
 
-- ### テキストの範囲選択
+  ```css
+  input {
+    accent-color: red;
+  }
+  ```
+
+  <!-- demo
+
+  ```html
+  <input type="checkbox" checked>チェックボックス</input>
+  ```
+
+  -->
+
+## フォント
+
+- ### 太さ
+  `font-weight`
+  ```css
+  font-weight: bold;
+  ```
+
+  | 値 | 説明 | 例 |
+  | --- | --- | --- |
+  | `100` |  数値：細い | <span style="font-weight: 100">フォント</span> |
+  | `lighter` |  より細く | <span style="font-weight: lighter">フォント</span> |
+  | `normal` | 通常の太さ | <span style="font-weight: normal">フォント</span> |
+  | `bold` | 太字 | <span style="font-weight: bold">フォント</span> |
+  | `bolder` |  より太く | <span style="font-weight: bolder">フォント</span> |
+  | `900` |  数値：太い | <span style="font-weight: 900">フォント</span> |
+
+  数値
+  ```css
+  font-weight: 400;
+  ```
+  <span style="font-weight: 100">100</span> 
+  <span style="font-weight: 200">200</span> 
+  <span style="font-weight: 300">300</span> 
+  <span style="font-weight: 400">400</span> 
+  <span style="font-weight: 500">500</span> 
+  <span style="font-weight: 600">600</span> 
+  <span style="font-weight: 700">700</span> 
+  <span style="font-weight: 800">800</span> 
+  <span style="font-weight: 900">900</span> 
+
+
+## テキスト
+
+- ### 範囲選択
 
   `user-select`
   - 全選択（`all`）
@@ -477,21 +587,3 @@
     ```
 
     -->
-
-- ### アクセントカラー
-
-  `accent-color`：チェックボックス、ラジオボタン、レンジ、プログレスバーなどの色を指定
-
-  ```css
-  input {
-    accent-color: red;
-  }
-  ```
-
-  <!-- demo
-
-  ```html
-  <input type="checkbox" checked>チェックボックス</input>
-  ```
-
-  -->
