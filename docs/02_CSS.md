@@ -22,7 +22,8 @@
   - [太さ（`font-weight`）](#太さ)
 
 - テキスト
-  - [範囲選択（`user-select）](#範囲選択)
+  - [範囲選択（`user-select`）](#範囲選択)
+  - [単語間の隙間（`word-spacing`）](#単語間の隙間)
 
 # 基本
 
@@ -584,6 +585,65 @@
 
     ```html
     <div>選択不可</div>
+    ```
+
+    -->
+  ---
+
+- ### 単語間の隙間
+  `word-spacing`：1.5em や 10px のような長さの単位で指定
+
+  - 自動調整（`normal`）
+    ```css
+    word-spacing: normal;
+    ```
+
+    <!-- demo
+
+    ```html
+    <div>A VSCode extension that adds demo features to Markdown Preview.</div>
+    ```
+
+    -->
+
+  - 指定する場合
+    ```css
+    word-spacing: 10px;
+    ```
+
+    <!-- demo
+
+    ```html
+    <div>A VSCode extension that adds demo features to Markdown Preview.</div>
+    ```
+
+    -->
+
+- ### 文字間の隙間
+  `letter-spacing`：1.5em や 10px のような長さの単位で指定
+
+  - 自動調整（`normal`）
+    ```css
+    letter-spacing: normal;
+    ```
+
+    <!-- demo
+
+    ```html
+    <div>A VSCode extension that adds demo features to Markdown Preview.</div>
+    ```
+
+    -->
+
+  - 指定する場合
+    ```css
+    letter-spacing: 10px;
+    ```
+
+    <!-- demo
+
+    ```html
+    <div>A VSCode extension that adds demo features to Markdown Preview.</div>
     ```
 
     -->

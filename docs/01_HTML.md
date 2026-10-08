@@ -3,6 +3,10 @@
 - 文字系
   - [強調](#強調)
   - [上付き・下付き](#上付き下付き)
+  - [コード（`<code>`）](#コード)
+
+- 文書構造
+  - [折りたたみ](#折りたたみ)
 
 # 基本
 
@@ -24,6 +28,7 @@
     ```
 
     <!-- demo -->
+    ---
 
 - ### 上付き、下付き
   - 上付き：`<sup>`
@@ -40,4 +45,48 @@
     水の分子記号は、H<sub>2</sub>O
     ```
 
+    <!-- demo -->
+    ---
+
+- ### コード
+  `<code>`
+  ```html
+  JavaScript で変数 num に値 5 を代入するには、<code>num = 5;</code>と記述する
+  ```
+  <!-- demo -->
+
+
+
+## 文書構造
+
+- ### 折りたたみ
+  - 基本
+    ```html
+    <details>
+      <summary>タイトル</summary>
+      中身
+    </details>
+    ```
+    <!-- demo -->
+
+  - デフォルトを開いた状態にする（属性：`open`）
+    ```html
+    <details open>
+      <summary>タイトル</summary>
+      中身
+    </details>
+    ```
+    <!-- demo -->
+
+  - 複数あるうち、開くのは一つのみにする（属性：`name`）
+    ```html
+    <details name="questions">
+      <summary>タイトル➀</summary>
+      中身➀
+    </details>
+    <details name="questions">
+      <summary>タイトル➁</summary>
+      中身➁
+    </details>
+    ```
     <!-- demo -->
