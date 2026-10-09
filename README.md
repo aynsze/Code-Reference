@@ -14,7 +14,8 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 
 - [HTML](./docs/01_HTML.md)
 - [CSS](./docs/02_CSS.md)
-- [JavaScript](./docs/03_JavaScript.md)
+- [JavaScript基本](./docs/03_1. JavaScript_基本.md)
+- [JavaScript応用](./docs/03_2. JavaScript_応用.md)
 - [Python](./docs/04_Python.md)
 - [正規表現](./docs/05_正規表現.md)
 - [SQL](./docs/06_SQL.md)
