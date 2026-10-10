@@ -5,8 +5,9 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 記述方式も、上記の拡張機能に従う。
 
 コードの学習には、以下の参考資料を使用する。
-- とほほ
+- とほほのWWW入門 (https://www.tohoho-web.com/)
 - MDN
+- JavaDrive (https://www.javadrive.jp/)
 - ChatGPT
 - 他
 
