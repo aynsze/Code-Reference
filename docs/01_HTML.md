@@ -19,44 +19,36 @@
 
 - ### 強調
   - `<strong>`
-
     ```html
     テキストを<strong>強調</strong>する
     ```
-
     <!-- demo -->
 
   - `<b>`
-
     ```html
     テキストを<b>強調</b>する
     ```
-
     <!-- demo -->
     ---
 
 - ### 上付き、下付き
   - 上付き：`<sup>`
-
     ```html
     10の2乗は、10<sup>2</sup>
     ```
-
     <!-- demo -->
 
   - 下付き：`<sub>`
-
     ```html
     水の分子記号は、H<sub>2</sub>O
     ```
-
     <!-- demo -->
     ---
 
 - ### コード
   `<code>`
   ```html
-  JavaScript で変数 num に値 5 を代入するには、<code>num = 5;</code>と記述する
+  JavaScript では、<code>num = 5;</code>と記述する
   ```
   <!-- demo -->
 
@@ -100,7 +92,7 @@
 `<input type="種類" 属性>`
 - ### ラベルと入力欄を関連づける
   例：「名前」をクリックすると、入力欄にフォーカスが移動する
-  - `<label>`タグで囲む方法
+  - `<label>` タグで囲む方法
   
     前に表示
     ```html
@@ -128,60 +120,33 @@
     <!-- demo -->
 
 - ### 種類（`type`）
-  | 種類           | 説明                     |
-  | -------------- | ------------------------ |
-  | フィールド系   |                          |
-  | `text`         | テキストを入力           |
-  | `password`     | パスワードを入力         |
-  | `file`         | ファイルを入力           |
-  | `search`       | 検索値を入力             |
-  | `hidden`       | 表示しない               |
-  | `tel`          | 電話番号を入力           |
-  | `url`          | URLを入力                |
-  | `email`        | メールアドレスを入力     |
-  | `date`         | 日付を入力               |
-  | `time`         | 時刻を入力               |
-  | `number`       | 数値を入力               |
-  | `range`        | 範囲を指定               |
-  | `color`        | 色を入力                 |
-  | `month`        | 年と月を入力             |
-  | `week`         | 年と週を入力             |
-  | 選択・ボタン系 |                          |
-  | `button`       | 汎用                     |
-  | `checkbox`     | チェックボックス         |
-  | `radio`        | ラジオボタン             |
-  | `submit`       | フォームの送信           |
-  | `reset`        | 初期状態に戻す           |
-  | `image`        | 画像を使ったフォーム送信 |
+  | 種類           | 説明                     | 例                      |
+  | -------------- | ------------------------ | ----------------------- |
+  | フィールド系   |                          |                         |
+  | `text`         | テキストを入力           | <input type="text">     |
+  | `password`     | パスワードを入力         | <input type="password"> |
+  | `file`         | ファイルを入力           | <input type="file">     |
+  | `search`       | 検索値を入力             | <input type="search">   |
+  | `hidden`       | 表示しない               | <input type="hidden">   |
+  | `tel`          | 電話番号を入力           | <input type="tel">      |
+  | `url`          | URLを入力                | <input type="url">      |
+  | `email`        | メールアドレスを入力     | <input type="email">    |
+  | `date`         | 日付を入力               | <input type="date">     |
+  | `time`         | 時刻を入力               | <input type="time">     |
+  | `number`       | 数値を入力               | <input type="number">   |
+  | `range`        | 範囲を指定               | <input type="range">    |
+  | `color`        | 色を入力                 | <input type="color">    |
+  | `month`        | 年と月を入力             | <input type="month">    |
+  | `week`         | 年と週を入力             | <input type="week">     |
+  | 選択・ボタン系 |                          |                         |
+  | `button`       | 汎用                     | <input type="button">   |
+  | `checkbox`     | チェックボックス         | <input type="checkbox"> |
+  | `radio`        | ラジオボタン             | <input type="radio">    |
+  | `submit`       | フォームの送信           | <input type="submit">   |
+  | `reset`        | 初期状態に戻す           | <input type="reset">    |
+  | `image`        | 画像を使ったフォーム送信 | <input type="image">    |
 
-  <!-- demo
-  ```html
-  <table>
-      <tr><td>テキスト</td><td><input type="text"></td></tr>
-      <tr><td>パスワード</td><td><input type="password"></td></tr>
-      <tr><td>ファイル</td><td><input type="file"></td></tr>
-      <tr><td>検索</td><td><input type="search"></td></tr>
-      <tr><td>隠し</td><td><input type="hidden"></td></tr>
-      <tr><td>電話番号</td><td><input type="tel"></td></tr>
-      <tr><td>URL</td><td><input type="url"></td></tr>
-      <tr><td>メールアドレス</td><td><input type="email"></td></tr>
-      <tr><td>日付</td><td><input type="date"></td></tr>
-      <tr><td>時刻</td><td><input type="time"></td></tr>
-      <tr><td>数値</td><td><input type="number"></td></tr>
-      <tr><td>範囲</td><td><input type="range"></td></tr>
-      <tr><td>色</td><td><input type="color"></td></tr>
-      <tr><td>年月</td><td><input type="month"></td></tr>
-      <tr><td>年・週</td><td><input type="week"></td></tr>
-      <tr><td>ボタン</td><td><input type="button"></td></tr>
-      <tr><td>チェックボックス</td><td><input type="checkbox"></td></tr>
-      <tr><td>ラジオボタン</td><td><input type="radio"></td></tr>
-      <tr><td>送信</td><td><input type="submit"></td></tr>
-      <tr><td>リセット</td><td><input type="reset"></td></tr>
-      <tr><td>画像ボタン</td><td><input type="image"></td></tr>
-  </table>
-  ```
-  -->
----
+  ---
 
 - ### 属性
   | 属性                 | 説明                                                         |
