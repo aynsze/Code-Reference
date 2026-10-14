@@ -11,7 +11,7 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 - ChatGPT
 - 他
 
-### 目次
+### 目次（[索引](索引.md)）
 
 - [HTML](./docs/01_HTML.md)
 - [CSS](./docs/02_CSS.md)

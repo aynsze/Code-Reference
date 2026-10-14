@@ -57,6 +57,7 @@
 ## 文書構造
 
 - ### 折りたたみ
+  `<details>`の中に`<summary>`
   - 基本
     ```html
     <details>
@@ -89,7 +90,7 @@
     <!-- demo -->
 
 ## フォーム（`<input>`）
-`<input type="種類" 属性>`
+`<input type="種類" 属性>`：空要素なので、`</input>`は不要
 - ### ラベルと入力欄を関連づける
   例：「名前」をクリックすると、入力欄にフォーカスが移動する
   - `<label>` タグで囲む方法
@@ -122,23 +123,23 @@
 - ### 種類（`type`）
   | 種類           | 説明                     | 例                      |
   | -------------- | ------------------------ | ----------------------- |
-  | フィールド系   |                          |                         |
-  | `text`         | テキストを入力           | <input type="text">     |
-  | `password`     | パスワードを入力         | <input type="password"> |
-  | `file`         | ファイルを入力           | <input type="file">     |
-  | `search`       | 検索値を入力             | <input type="search">   |
+  | 入力系   |                          |                         |
+  | `text`         | テキスト           | <input type="text">     |
+  | `password`     | パスワード         | <input type="password"> |
+  | `file`         | ファイル           | <input type="file">     |
+  | `search`       | 検索値             | <input type="search">   |
   | `hidden`       | 表示しない               | <input type="hidden">   |
-  | `tel`          | 電話番号を入力           | <input type="tel">      |
-  | `url`          | URLを入力                | <input type="url">      |
-  | `email`        | メールアドレスを入力     | <input type="email">    |
-  | `date`         | 日付を入力               | <input type="date">     |
-  | `time`         | 時刻を入力               | <input type="time">     |
-  | `number`       | 数値を入力               | <input type="number">   |
-  | `range`        | 範囲を指定               | <input type="range">    |
-  | `color`        | 色を入力                 | <input type="color">    |
-  | `month`        | 年と月を入力             | <input type="month">    |
-  | `week`         | 年と週を入力             | <input type="week">     |
+  | `tel`          | 電話番号           | <input type="tel">      |
+  | `url`          | URL                | <input type="url">      |
+  | `email`        | メールアドレス     | <input type="email">    |
+  | `date`         | 日付               | <input type="date">     |
+  | `time`         | 時刻               | <input type="time">     |
+  | `number`       | 数値               | <input type="number">   |
+  | `color`        | 色                 | <input type="color">    |
+  | `month`        | 年と月             | <input type="month">    |
+  | `week`         | 年と週             | <input type="week">     |
   | 選択・ボタン系 |                          |                         |
+  | `range`        | 範囲を指定               | <input type="range">    |
   | `button`       | 汎用                     | <input type="button">   |
   | `checkbox`     | チェックボックス         | <input type="checkbox"> |
   | `radio`        | ラジオボタン             | <input type="radio">    |
