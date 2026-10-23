@@ -7,11 +7,12 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 コードの学習には、以下の参考資料を使用する。
 - とほほのWWW入門 (https://www.tohoho-web.com/)
 - MDN
-- JavaDrive (https://www.javadrive.jp/)：JavaScript
-- SQLひろば (https://sqlhiroba.dev/guides/select-basics)：SQL
+- JavaDrive (https://www.javadrive.jp/ )：JavaScript
+- SQLひろば (https://sqlhiroba.dev/guides/select-basics )：SQL
 - ChatGPT
 - Qiita
 - 他
+- SQL Playgroung (https://aynsze.github.io/Pages/sql-playground.html )：SQLデモ
 
 ### 目次（[索引](索引.md)）
 
@@ -24,6 +25,7 @@ VS Code拡張機能の [Markdown Advanced Preview](https://github.com/aynsze/vsc
 - [SQL](./docs/06_SQL.md)
 - [Pyside6](./docs/07_Pyside6.md)
 - [JSON](./docs/08_JSON.md)
+- [Markdown](./docs/09_Markdown.md)
 - [Git](./docs/Git.md)
 - [GitHub](./docs/GitHub.md)
 - [Tampermonkey](./docs/Tampermonkey.md)
